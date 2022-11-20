@@ -1,9 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
-from tkinter import messagebox as mess
-import tkinter.simpledialog as tsd
-import os
-import csv
 from gui import *
 from gui1 import *
 
@@ -19,8 +14,8 @@ message3 = tk.Label(window, text="Welcome to Attendance system" ,fg="white",bg="
 message3.place(relx=-0.3, rely=0)
 head2 = tk.Label(frame2, text="                          Attendance System                          ", fg="black",bg="#3ece48" ,font=('times', 17, ' bold ') )
 head2.grid(row=0,column=0)
-takeImg = tk.Button(frame2, text="Take Attendance", command=take_att  ,fg="white"  ,bg="blue"  ,width=34  ,height=1, activebackground = "white" ,font=('times', 15, ' bold '))
-takeImg.place(x=30, y=100)
-trainImg = tk.Button(frame2, text="Add Profile", command=A_profile ,fg="white"  ,bg="blue"  ,width=34  ,height=1, activebackground = "white" ,font=('times', 15, ' bold '))
-trainImg.place(x=30, y=180)
+tImg = tk.Button(frame2, text="Take Attendance", command=take_att  ,fg="white"  ,bg="blue"  ,width=34  ,height=1, activebackground = "white" ,font=('times', 15, ' bold '))
+tImg.place(x=30, y=100)
+trImg = tk.Button(frame2, text="Add Profile", command=A_profile ,fg="white"  ,bg="blue"  ,width=34  ,height=1, activebackground = "white" ,font=('times', 15, ' bold '))
+trImg.place(x=30, y=180)
 window.mainloop()
